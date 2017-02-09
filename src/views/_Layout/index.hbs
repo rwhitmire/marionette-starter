@@ -1,0 +1,27 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+  <div class="container">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  {{#link to="/" class="navbar-brand"}}Marionette Starter{{/link}}
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        {{#link to="/" class="nav-link"}}Home{{/link}}
+      </li>
+      <li class="nav-item">
+        {{#link to="/about" class="nav-link"}}About{{/link}}
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        {{#link to="/login" class="nav-link"}}Sign in{{/link}}
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div data-region="content"></div>
+</div>
