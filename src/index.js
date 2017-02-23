@@ -17,6 +17,7 @@ import './styles/site.scss'
  */
 
 import 'bootstrap'
+import 'jquery-validation'
 
 import Backbone from 'backbone'
 import app from './app'

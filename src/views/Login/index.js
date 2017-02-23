@@ -17,12 +17,13 @@ var LoginModel = Model.extend({
 const LoginView = View.extend({
   template,
 
-  events: {
-    'submit form': 'handleSubmit'
+  ui: {
+    form: 'form',
+    username: '[name="username"]'
   },
 
-  ui: {
-    username: '[name="username"]'
+  events: {
+    'submit form': 'handleSubmit'
   },
 
   initialize () {
@@ -30,6 +31,7 @@ const LoginView = View.extend({
   },
 
   onAttach () {
+    this.ui.form.validate()
     this.ui.username.focus()
   },
 

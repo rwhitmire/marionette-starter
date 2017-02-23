@@ -1,1 +1,9 @@
-// include custom scss here
+@import "bootstrap/variables";
+
+.error {
+  color: $red;
+}
+
+.form-control.error {
+  border-color: $red;
+}

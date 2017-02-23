@@ -13,13 +13,15 @@ module.exports = {
      */
 
     vendor: [
-      'jquery',
       'backbone',
-      'underscore',
       'backbone.marionette',
+      'backbone.syphon',
       'bootstrap',
       'handlebars/runtime',
-      'tether'
+      'jquery',
+      'jquery-validation',
+      'tether',
+      'underscore'
     ],
 
     main: common.entry
