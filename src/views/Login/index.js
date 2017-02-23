@@ -1,5 +1,6 @@
 import { Model } from 'backbone'
 import { View } from 'backbone.marionette'
+import { serialize } from 'backbone.syphon'
 import template from './index.hbs'
 
 var LoginModel = Model.extend({
@@ -28,23 +29,13 @@ const LoginView = View.extend({
     this.model = new LoginModel()
   },
 
-  onRender () {
-    this.bindField('username')
-    this.bindField('password')
-  },
-
   onAttach () {
     this.ui.username.focus()
   },
 
-  bindField (prop) {
-    this.$(`[name="${prop}"]`)
-      .val(this.model.get(prop))
-      .on('change', e => this.model.set(prop, e.target.value))
-  },
-
   handleSubmit (e) {
     e.preventDefault()
+    this.model.set(serialize(this))
     this.model.authenticate()
   }
 })

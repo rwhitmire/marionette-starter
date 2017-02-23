@@ -655,6 +655,10 @@ backbone.radio@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/backbone.radio/-/backbone.radio-2.0.0.tgz#bbe8672b373e313f99f36d2fbcf583fe77d04f42"
 
+backbone.syphon@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/backbone.syphon/-/backbone.syphon-0.7.0.tgz#69399f303fc1826d298ad4d83519744a69b3832d"
+
 backbone@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/backbone/-/backbone-1.3.3.tgz#4cc80ea7cb1631ac474889ce40f2f8bc683b2999"
