@@ -1,18 +1,7 @@
-import { Model } from 'backbone'
+import { history } from 'backbone'
 import { View } from 'backbone.marionette'
 import { serialize } from 'backbone.syphon'
 import template from './index.hbs'
-
-var LoginModel = Model.extend({
-  defaults: {
-    username: '',
-    password: ''
-  },
-
-  authenticate () {
-    console.log('authenticate!', this.attributes)
-  }
-})
 
 const LoginView = View.extend({
   template,
@@ -26,10 +15,6 @@ const LoginView = View.extend({
     'submit form': 'handleSubmit'
   },
 
-  initialize () {
-    this.model = new LoginModel()
-  },
-
   onAttach () {
     this.ui.form.validate()
     this.ui.username.focus()
@@ -37,8 +22,8 @@ const LoginView = View.extend({
 
   handleSubmit (e) {
     e.preventDefault()
-    this.model.set(serialize(this))
-    this.model.authenticate()
+    console.log('authenticate', serialize(this))
+    history.navigate('', { trigger: true })
   }
 })
 
