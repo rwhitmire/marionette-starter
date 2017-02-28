@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin')
 const WebpackChunkHash = require('webpack-chunk-hash')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const common = require('./webpack.common')
+const common = require('./common')
 
 module.exports = {
   entry: {

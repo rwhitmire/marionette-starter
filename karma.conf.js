@@ -1,5 +1,5 @@
 const path = require('path')
-const webpackConfig = require('./build/webpack.test.js')
+const webpackConfig = require('./build/test.js')
 
 // Karma configuration
 // Generated on Tue Feb 07 2017 15:23:26 GMT-0500 (Eastern Standard Time)
