@@ -12,7 +12,7 @@ const LoginView = View.extend({
   },
 
   events: {
-    'submit form': 'handleSubmit'
+    'submit @ui.form': 'handleSubmit'
   },
 
   onAttach () {

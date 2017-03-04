@@ -1,7 +1,7 @@
 import Marionette from 'backbone.marionette'
 
 const App = Marionette.Application.extend({
-  region: '#app'
+  region: 'body'
 })
 
 const app = new App()
